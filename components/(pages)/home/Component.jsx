@@ -8,25 +8,25 @@ import Header from '@/public/images/components/header.png';
 const components = [
     {
         name: "Navbar",
-        source: "/components/navbar",
+        source: "https://ui.cnippet.com/components/navbar",
         imageURL: Navbar,
         number: "3 components",
     },
     {
         name: "Footer",
-        source: "/components/footer",
+        source: "https://ui.cnippet.com/components/footer",
         imageURL: Footer,
         number: "3 components",
     },
     {
         name: "Hero",
-        source: "/components/hero",
+        source: "https://ui.cnippet.com/components/hero",
         imageURL: Hero,
         number: "3 components",
     },
     {
         name: "Header",
-        source: "/components/header",
+        source: "https://ui.cnippet.com/components/header",
         imageURL: Header,
         number: "3 components",
     },
@@ -37,7 +37,7 @@ const Components = () => {
     return (
         <section className="relative isolate z-10 mx-auto w-full px-6 py-10 lg:px-8 lg:py-20">
             <div className="max-w-2xl">
-                <h2 className="text-base font-semibold leading-7 text-indigo-600">
+                <h2 className="text-base font-semibold leading-7 text-blue-600">
                     Components
                 </h2>
                 <p className="mt-4 text-4xl font-extrabold tracking-tight text-slate-100">
@@ -65,7 +65,7 @@ const Components = () => {
                                     />
                                 </div>
                                 <h4 className="mt-4 text-sm font-medium text-slate-100 group-hover:text-white">
-                                    <a href={component.source}>
+                                    <a href={component.source} target="_blank">
                                         <span className="absolute -inset-2.5 z-10"></span>
                                         <span className="relative">{component.name}</span>
                                     </a>
@@ -77,7 +77,7 @@ const Components = () => {
                         </li>
                     ))}
 
-                    <div className="pointer-events-none absolute -inset-x-2.5 -bottom-2.5 h-[16.6%] bg-gradient-to-t from-black to-black/25 sm:h-[33.3%]"></div>
+                    <div className="pointer-events-none absolute -inset-x-2.5 -bottom-2.5 h-[16.6%] bg-gradient-to-t from-black to-black/25 sm:h-[22.3%]"></div>
                 </ul>
             </div>
             <div className="pointer-events-none relative z-10 -mt-3 flex justify-center">
