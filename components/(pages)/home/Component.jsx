@@ -56,7 +56,7 @@ const Components = () => {
                 <ul className="grid-cols-[repeat(auto-fill,minmax(12rem, 1fr))] grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {components.map((component) => (
                         <li key={component.name}>
-                            <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-slate-900 before:opacity-0 hover:before:opacity-90">
+                            <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-olive-900 before:opacity-0 hover:before:opacity-90">
                                 <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">
                                     <Image
                                         src={component.imageURL}
