@@ -13,7 +13,7 @@ export default function Home() {
         <Hero />
         <Tech />
         <Works />
-        <Components />
+        {/* <Components /> */}
       </main>
       <Footer />
 

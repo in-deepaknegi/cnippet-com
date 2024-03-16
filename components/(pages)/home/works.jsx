@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Mrida from '@/public/images/works/mridakriti.png';
-import Cnippet from '@/public/images/works/cnippetui.png';
+import Mrida from '@/public/images/works/w01.png';
+import Cnippet from '@/public/images/works/w02.png';
 
 const companies = [
     {
@@ -25,8 +25,8 @@ const Works = () => {
         <section className='relative isolate bg-white py-24 md:py-32'>
             <div className='mx-auto max-w-7xl px-6 lg:px-8'>
                 <div className='max-w-3xl text-left'>
-                    <h2 className='mt-2 text-3xl font-bold tracking-[-0.025em] text-gray-900 sm:text-5xl'>
-                        Check out my <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#f6550c] via-[#d01147] to-[#5c4fdc]'>latest works</span>
+                    <h2 className='mt-2 text-3xl font-semibold tracking-[-0.025em] text-gray-900 sm:text-5xl'>
+                        Check out our latest works
 
                     </h2>
                     <p className='mt-6 text-lg leading-8 text-gray-800'>
@@ -38,31 +38,21 @@ const Works = () => {
                     {companies.map((company, i) => (
                         <div key={i}>
                             <div className='group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-100 before:opacity-0 hover:before:opacity-100'>
-                                <div className='relative aspect-[16/8.25] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10'>
+
+                                <div className='relative aspect-[16/8.05] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10'>
                                     <Image
                                         src={company.siteImage}
                                         alt='navbar-img'
                                         className='absolute object-cover inset-0'
                                     />
                                 </div>
-                                <p className='relative mt-4 text-xs font-medium text-slate-500'>{company.siteType}</p>
-
-                                <h4 className='mt-2 text-3xl font-medium text-slate-800 group-hover:text-black'>
-                                    <a href={company.siteLink} target="_blank">
-                                        <span className='absolute -inset-2.5 z-10'></span>
-                                        <span className='relative'>{company.name}</span>
-                                    </a>
-                                </h4>
-                                <p className="relative mt-4 line-clamp-3 text-base leading-6 text-gray-800">
-                                    {company.desc}
-                                </p>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-            <div className='pointer-events-none relative z-10 mt-10 flex justify-center'>
-                <a href="/works" className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-primary text-white pointer-events-auto" >
+            <div className='pointer-events-none relative z-10 mt-4 flex justify-center'>
+                <a href="/works" className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-primary text-black pointer-events-auto" >
                     <span>Show more...</span>
                 </a>
             </div>

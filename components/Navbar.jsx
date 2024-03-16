@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
 
 const links = [
     {
@@ -23,16 +22,6 @@ const links = [
         title: "Blogs",
         url: "#",
     },
-    {
-        id: 5,
-        title: "About Us",
-        url: "#",
-    },
-    {
-        id: 6   ,
-        title: "Contacts",
-        url: "#",
-    },
 ];
 
 const Navbar = () => {
@@ -45,33 +34,8 @@ const Navbar = () => {
     return (
 
         <>
-            <nav>
-                <div className="bg-black">
-                    <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-0">
-                        <div className="hidden text-sm text-white lg:block lg:flex-1">
-                            English
-                        </div>
-                        <div className="hidden flex-1 items-center md:flex lg:flex-none">
-                            <a href="/pro" className="text-sm text-gray-200">
-                                Get all pro components (first month free){" "}
-                                <span aria-hidden="true">→</span>
-                            </a>
-                        </div>
-                        <div className="flex lg:flex-1 ml-auto lg:items-center lg:justify-end lg:gap-2">
-                            <a href="#" className="text-sm text-gray-100">
-                                Sign In
-                            </a>
-                            <span className="mx-2 h-4 w-[1px] bg-gray-200"></span>
-                            <a href="#" className="text-sm text-gray-100">
-                                Create an account
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
             <header className="sticky top-0 bg-white z-20">
-                <div className="flex items-center justify-between border-b border-gray-100 bg-white px-6 py-6 lg:px-8">
+                <div className="flex items-center justify-between border-b border-gray-100 px-6 py-6 lg:px-8">
                     <div className="flex lg:flex-none">
                         <a href="/" className="-m-1.5 p-1.5 text-2xl text-black">
                             Cnippet <span className="text-base">.com</span>
