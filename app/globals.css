@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'rubik';
+  src: url('/fonts/Rubik.woff2');
+}
 @layer base {
   ::-webkit-scrollbar {
     width: 8px; /* width of the scrollbar */
@@ -19,5 +23,8 @@
 
   ::-webkit-scrollbar-corner {
     background: #f1f1f1; /* color of the scrollbar corner */
+  }
+  .rubik {
+    font-family: rubik;
   }
 }

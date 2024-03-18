@@ -1,11 +1,11 @@
-import React from 'react'
-import Image from 'next/image'
-import T1 from '@/public/images/techs/react.webp'
-import T2 from '@/public/images/techs/nextjs.svg'
-import T3 from '@/public/images/techs/node.webp'
-import T4 from '@/public/images/techs/tailwind.webp'
-import T5 from '@/public/images/techs/vercel.webp'
-import T6 from '@/public/images/techs/mongodb.svg'
+import React from "react";
+import Image from "next/image";
+import T1 from "@/public/images/techs/react.webp";
+import T2 from "@/public/images/techs/nextjs.svg";
+import T3 from "@/public/images/techs/node.webp";
+import T4 from "@/public/images/techs/tailwind.webp";
+import T5 from "@/public/images/techs/vercel.webp";
+import T6 from "@/public/images/techs/mongodb.svg";
 
 const Tool = [
     {
@@ -38,27 +38,25 @@ const Tool = [
         name: "HTML",
         image: T6,
     },
-]
-
+];
 
 const Tools = () => {
     return (
-        <section className='bg-white py-14 md:py-6 lg:py-8'>
-            <div className='mx-auto max-w-7xl px-5 lg:px-8'>
+        <section className="bg-white py-14 md:py-6 lg:py-8">
+            <div className="mx-auto max-w-7xl px-5 lg:px-8">
                 <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-6">
                     {Tool.map((logo) => (
-                        <a href={logo.href} target="_blank" key={logo.id} className="my-auto mx-auto">
-                            <Image
-                                src={logo.image}
-                                alt="ss"
-                                className={`h-full object-cover lg:col-span-1 ${logo.css}`}
-                            />
-                        </a>
+                        <Image
+                            key={logo.id}
+                            src={logo.image}
+                            alt="ss"
+                            className={`object-cover lg:col-span-1 ${logo.css}`}
+                        />
                     ))}
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Tools
+export default Tools;
