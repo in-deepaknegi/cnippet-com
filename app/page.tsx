@@ -15,8 +15,7 @@ export default function Home() {
         <Works />
         {/* <Components /> */}
       </main>
-      {/* <Footer /> */}
-
+      <Footer />
     </>
   );
 }

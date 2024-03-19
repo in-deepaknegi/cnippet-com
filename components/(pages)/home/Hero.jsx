@@ -23,15 +23,15 @@ const Hero = () => {
                     <Image
                         src={P1}
                         alt="oo"
-                        className="w-[11rem] absolute top-1/2 left-40 z-20"
+                        className="hidden md:block w-[9rem] md:w-[11rem] absolute top-[40%] md:top-1/2 left-4 xl:left-40 z-10"
                     />
                     <Image
                         src={P2}
                         alt="oo"
-                        className="w-[12rem] absolute top-40 right-40 z-20"
+                        className="hidden md:block w-[9rem] md:w-[11rem] absolute top-[40%] md:top-1/2 right-4 xl:right-40 z-10"
                     />
 
-                    <div className="mx-auto px-8 pt-40 h-screen z-50 max-w-3xl">
+                    <div className="mx-auto px-8 pt-40 h-screen z-20 max-w-3xl">
                         <h1 className="text-5xl rubik px-10 text-black md:leading-[1.125] md:text-[3.565rem] text-center">
                             Accelerate Your Growth with <br /> Our Marketing Team
                         </h1>
@@ -39,9 +39,9 @@ const Hero = () => {
                             Discover innovative marketing solutions that will help your
                             business thrive in today&apos;s competitive landscape
                         </p>
-                        <div className="mx-auto mt-10 flex items-center justify-center gap-x-6">
+                        <div className="mx-auto mt-4 md:mt-10 flex items-center justify-center gap-x-6">
                             <form action="" className="mx-auto w-full max-w-xl">
-                                <div className="flex gap-x-3">
+                                <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row gap-x-3">
                                     <label htmlFor="email-address" className="sr-only">
                                         Email address
                                     </label>
