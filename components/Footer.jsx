@@ -207,7 +207,7 @@ const Footer = () => {
                                 © 2024
                                 <a href="/" className="hover:underline">
                                     {" "}
-                                    Cnippet UI™
+                                    Cnippet™
                                 </a>
                                 . All Rights Reserved.
                             </span>

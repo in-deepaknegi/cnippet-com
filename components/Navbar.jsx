@@ -121,7 +121,7 @@ const Navbar = () => {
             </div>
             {mobilemenu && (
                 <div className="lg:hidden" role="dialog" aria-modal="true">
-                    <div className="fixed inset-y-0 z-10 top-24 mt-3 right-0  overflow-y-auto px-6 py-10 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 h-full w-full bg-white bg-clip-padding backdrop-filter bg-opacity-80 backdrop-blur-md">
+                    <div className="fixed inset-y-0 z-10 top-[4.5rem] mt-3 right-0  overflow-y-auto px-6 py-10 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 h-full w-full bg-white bg-clip-padding backdrop-filter bg-opacity-80 backdrop-blur-md">
                         <div className="flex items-center justify-between">
                             <a href="#" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Your Company</span>
